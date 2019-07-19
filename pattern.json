@@ -1,0 +1,12 @@
+{
+  "RecognitionRegex": {
+    "Android": {
+      "InternalFunction": "(?<=INNERFUNC_(MD5|RSA)\\().*(?=\\))",
+      "JSFunction": "(?<=function( )?executor\\(\\)\\{).*(?=})",
+      "FunctionReturn": "return .*;?",
+      "ParamMark": "<param([0-9]+)>"
+    },
+    "Web": {
+    }
+  }
+}

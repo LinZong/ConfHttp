@@ -1,0 +1,32 @@
+{
+    "Kugou":{
+        "Search":{
+            "Url":"http://songsearch.kugou.com/song_search_v2",
+            "Method":"GET",
+            "Header":{},
+            "QueryString":{
+                "keyword":"function executor(){ return encodeURIComponent(\"<param0>\"); }",
+                "page": 1,
+                "pagesize": 30
+            },
+            "Body":{
+                "Type": "application/json",
+                "Data": {}
+            }
+        },
+        "GetSongUrl":{
+            "Url":"https://wwwapi.kugou.com/yy/index.php",
+            "Method":"GET",
+            "Header":{},
+            "QueryString":{
+                "r":"play/getdata",
+                "hash":"<param0>",
+                "mid":"INNERFUNC_MD5( function executor(){return ( 1 + Math.random() * 0x100000 | 0).toString(16).substring(1);} )"
+            },
+            "Body":{
+                "Type": "application/json",
+                "Data": {}
+            }
+        }
+    }
+}
